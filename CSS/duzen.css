@@ -1,0 +1,254 @@
+/*Mobil Düzen*/
+@media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      width: 100%;
+    }
+  
+    .search-bar {
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    .search-bar input {
+      width: 80%;
+      border-radius: 10px;
+    }
+  
+    .search-bar button {
+      width: 20%;
+      border-radius: 10px;
+    }
+  
+    /*Fotograf Galerisi(Anasayfa)*/
+    .gallery-container {
+      grid-template-columns: repeat(2, 1fr); 
+    }
+
+    /*Anasayfa Banner*/
+    .full-banner {
+      height: 60vh;
+    }
+  
+    /*Banner İçeriği*/
+    .banner-content h1 {
+      font-size: 32px;
+      margin-bottom: 8px;
+    }
+  
+    .banner-content p {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+  
+    .tour-item {
+      width: 90%;
+      margin: 20px auto;
+    }
+  
+    /*Kart başlık*/
+    .tour-info h3 {
+      font-size: 20px;
+    }
+  
+    .button-link {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  
+    /*Tur Sayfası Düzeni*/
+    .tour-categories {
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+      margin-top: 20px;
+    }
+  
+    .tour-category {
+      width: 90%;
+      height: auto;/
+    }
+  
+    .tour-category img {
+      height: 200px;
+    }
+  
+     /*Dinamik Alan*/
+     .content-container {
+      width: 90%; 
+      padding: 15px; 
+      margin: 20px auto; 
+    }
+
+    .content-container img {
+      width: 100%; 
+      height: auto; 
+    }
+
+    .gallery img {
+      width: 48%;
+   }
+
+    /*Blog Sayfası*/
+    .blog-content {
+      width: 90%; 
+      margin: 15px auto; 
+      padding: 15px; 
+    }
+
+    .title-image {
+      width: 100%; 
+      height: auto; 
+    }
+
+    /* Etkinlik Sayfası */
+    .event-list {
+      padding: 1em;
+      gap: 0.5em;
+    }
+    
+    .event-item {
+      display: flex; 
+      flex-direction: column; 
+      text-align: left;
+      padding: 1em;
+      width: 100%; 
+      box-sizing: border-box; 
+    }
+
+     /*Hakkımızda Sayfası*/
+    .about-section {
+      width: 90%; 
+      padding: 15px; 
+    }
+  
+    /* İletişim Formunu*/
+    #contact {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    /*Footer*/
+    .footer-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-left,
+    .footer-right {
+      margin-bottom: 20px;
+    }
+  }
+  
+  /*Daha Küçük Ekranlar İçin (Telefon)*/
+  @media (max-width: 480px) {
+    .logo {
+      font-size: 20px;
+    }
+  
+    .nav-links li a {
+      font-size: 16px;
+      padding: 5px;
+    }
+  
+    #contact h2 {
+      font-size: 20px;
+    }
+    /*Fotograf Galerisi(Anasayfa)*/
+    .gallery-container {
+      grid-template-columns: 1fr; 
+    }
+
+    /*Anasayfa Banner İçeriği*/
+    .banner-content h1 {
+      font-size: 24px;
+    }
+  
+    .banner-content p {
+      font-size: 14px;
+    }
+  
+    .container-title {
+      font-size: 20px;
+    }
+  
+    .tour-info h3 {
+      font-size: 18px;
+    }
+  
+    .button-link {
+      padding: 6px 12px;
+      font-size: 12px;
+    }
+
+    /*Dinamik Alan*/
+    .content-container {
+      width: 95%; 
+      padding: 10px; 
+      margin: 15px auto; 
+    }   
+
+    .content-container img {
+      width: 100%; 
+      height: auto; 
+    }
+
+    .gallery img {
+      width: 100%; 
+    }
+
+    /*Blog Sayfası*/
+    .blog-content {
+        width: 95%; 
+        margin: 10px auto; 
+        padding: 10px; 
+    }
+
+    .title-image {
+      width: 100%;
+      height: auto; 
+    }
+  
+    /*Etkinlik Sayfası*/
+    .event-list {
+      padding: 0.5em;
+      gap: 0.5em;
+    }
+  
+    .event-item {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      padding: 1em;
+      max-width: 100%;
+    }
+    
+    /*Hakkımızda Sayfası*/
+    .about-section {
+      width: 95%; 
+      padding: 10px; 
+    }
+
+    /*İletişim Formunu*/
+    #contact {
+      width: 95%;
+      padding: 10px;
+    }
+    
+   /*Footer*/
+    .footer-left h3,
+    .footer-right h3 {
+      font-size: 16px;
+    }
+  
+    .footer-bottom {
+      font-size: 10px;
+    }
+  }
+  

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dünyayı Geziyoruz</title>
+    <meta name="description" content="Seyahat sayfasi">
+    <meta name="keywords" content="seyahat, dünya turu, gezi rehberi, tatil, turistik yerler, yurt dışı turları">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="author" content="Dilara Köhle">
+    <!-- İcon eklemek için -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/style.css"> 
+    <link rel="stylesheet" href="../CSS/duzen.css"> 
+    <link rel="shortcut icon" type="image/png" href="../img/logo.png" /> 
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar">
+        <div class="logo">Dünyayı Geziyoruz</div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Anasayfa</a></li>
+            <li><a href="../tur.html">Tur</a></li>
+            <li><a href="../blog.html">Blog</a></li>
+            <li><a href="../etkinliktakvimi.html">Etkinlik Takvimi</a></li>
+            <li><a href="../hakkimizda.html">Hakkımızda</a></li>
+            <li><a href="../iletisim.html">İletişim</a></li>
+        </ul>
+        <div class="search-bar">
+            <input type="text" id="arama" placeholder="Ara" onkeyup="oneriGoster(this.value)">
+            <button onclick="aramaYap()"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <div id="oneriListesi"></div> 
+        </div>
+    </nav>
+
+    <div class="tour-title">
+        <h2>TURLAR</h2>
+    </div>
+
+    <div class="tour-categories">
+        <!-- Vizesiz Turları Kartı -->
+        <div class="tour-category">
+            <img src="img/balkanlar.png" alt="Vizesiz Turları">
+            <div class="content">
+                <h2>VİZESİZ TURLARI</h2>
+                <ul>
+                    <li><a href="../ulke/balkanlar.html" target="_blank">Balkanlar Turları</a></li>
+                    <li><a href="../ulke/misir.html" target="_blank">Mısır Turları</a></li>
+                    <li><a href="../ulke/kuzeykibris.html" target="_blank">Kuzey Kıbrıs Turları</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Yurt Dışı Turları Kartı -->
+        <div class="tour-category">
+            <img src="img/fransaTur.png" alt="Yurt Dışı Turları">
+            <div class="content">
+                <h2>YURT DIŞI TURLARI</h2>
+                <ul>
+                    <li><a href="../ulke/italya.html" target="_blank">İtalya Turları </a></li>
+                    <li><a href="../ulke/yunanistan.html" target="_blank">Yunanistan Turları</a></li>
+                    <li><a href="../ulke/fransa.html" target="_blank">Fransa Turları</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Öne Çıkan Turlar Kartı -->
+        <div class="tour-category">
+            <img src="img/yunanistan.png" alt="Öne Çıkan Turlar">
+            <div class="content">
+                <h2>ÖNE ÇIKAN TURLAR</h2>
+                <ul>
+                    <li><a href="../ulke/yunanistan.html" target="_blank">Yunanistan Turları</a></li>
+                    <li><a href="../ulke/japonya.html" target="_blank">Japonya Turları</a></li>
+                    <li><a href="../ulke/balkanlar.html" target="_blank">Balkanlar Turları</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Turlar Açıklama Metni -->
+    <div class="tour-description">
+        <h3>Vizesiz Turları</h3>
+        <p>Vizesiz turlar, seyahat etmek isteyenler için büyük bir kolaylık sunuyor. Vize işlemleriyle uğraşmadan,
+            sadece pasaportunuzla seyahat edebileceğiniz bu turlar, hem zaman kazandırıyor hem de tatil planlamasını
+            daha keyifli hale getiriyor. Özellikle Türkiye vatandaşlarının vizesiz seyahat edebileceği birçok ülke,
+            tarihi ve doğal güzellikleriyle dikkat çekiyor. Balkanlar’dan Asya’ya, Ortadoğu’dan Karayipler’e uzanan bu
+            destinasyonlar, kültürel zenginlikleri ve eşsiz deneyimleri ile unutulmaz bir tatil fırsatı sunuyor. Vizesiz
+            turlar, spontane seyahat planları yapmak isteyenler ve tatil sürecini karmaşık prosedürlerden uzak tutmayı
+            tercih edenler için ideal bir seçenek!</p>
+        <h3>Yurt Dışı Turları</h3>
+        <p>Yurt dışı turları, farklı kültürleri tanımak, yeni yerler keşfetmek ve unutulmaz anılar biriktirmek
+            isteyenler için eşsiz bir fırsat sunuyor. Avrupa’nın tarihi şehirlerinden Asya’nın mistik atmosferine,
+            Amerika’nın modern cazibesinden Afrika’nın büyüleyici doğasına kadar birçok destinasyon, her türden gezginin
+            hayallerini gerçekleştirmesine olanak tanıyor. Profesyonel rehberler eşliğinde düzenlenen turlar, hem
+            seyahati kolaylaştırıyor hem de gidilen yerin en özel noktalarını keşfetmenizi sağlıyor. İster kısa bir
+            hafta sonu kaçamağı ister kapsamlı bir tatil planı olsun, yurt dışı turları ile dünyayı yeniden keşfetmeye
+            hazır olun!</p>
+        <h3>Öne Çıkan Turlar</h3>
+        <p>Öne çıkan turlar, tatil severlerin en çok ilgi gösterdiği, popüler destinasyonları bir araya getiriyor. Tarihi
+            ve kültürel zenginlikleriyle Yunanistan'ın büyüleyici adalarından, Japonya'nın mistik atmosferine,
+            Balkanlar'ın doğal güzelliklerinden lezzet dolu rotalarına kadar geniş bir yelpaze sunan bu turlar, her
+            türden gezgine hitap ediyor. Profesyonel rehberlik, keyifli programlar ve unutulmaz deneyimler içeren öne
+            çıkan turlar, yeni yerler keşfetmek ve etkileyici anılar biriktirmek için harika bir fırsat! Seyahat
+            planınıza ilham verecek en özel destinasyonları bu seçkide bulabilirsiniz.</p>
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <h3>Sosyal Medya</h3>
+                <ul class="socials">
+                    <li><a href="https://www.facebook.com/?locale=tr_TR" target="_blank"><i
+                                class="fa-brands fa-facebook"></i> Facebook</a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i>
+                            Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <h3>Hizmetlerimiz</h3>
+                <ul class="links">
+                    <li><a href="../tur.html">Tur</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                    <li><a href="../etkinliktakvimi.html">Etkinlik Takvimi</a></li>
+                    <li><a href="../hakkimizda.html">Hakkımızda</a></li>
+                    <li><a href="../iletisim.html">İletişim</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Dünyayı Geziyoruz. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+
+    <script src="../js/arama.js"></script> 
+
+</body>
+
+</html>
