@@ -1,12 +1,12 @@
 const ulkeler = {
-    "İstanbul": "../ulke/istanbul.html",
-    "Fransa": "../ulke/fransa.html",
-    "İtalya": "../ulke/italya.html",
-    "Balkanlar": "../ulke/balkanlar.html",
-    "Kuzey Kıbrıs": "../ulke/kuzeykibris.html",
-    "Japonya": "../ulke/japonya.html",
-    "Mısır": "../ulke/misir.html",
-    "Yunanistan": "../ulke/yunanistan.html",
+    "İstanbul": "ulke/istanbul.html",
+    "Fransa": "ulke/fransa.html",
+    "İtalya": "ulke/italya.html",
+    "Balkanlar": "ulke/balkanlar.html",
+    "Kuzey Kıbrıs": "ulke/kuzeykibris.html",
+    "Japonya": "ulke/japonya.html",
+    "Mısır": "ulke/misir.html",
+    "Yunanistan": "ulke/yunanistan.html",
 };
 
 // Öneri göstermek için fonksiyon
